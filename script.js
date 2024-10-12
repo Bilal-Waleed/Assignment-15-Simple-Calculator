@@ -1,16 +1,17 @@
 var screenDiv = document.getElementsByClassName('screen')[0];
 
 function getValue(value) {
-    switch(value) {
+    switch (value) {
         case '=':
-            var result = eval(screenDiv.innerText);
-            screenDiv.innerText = result;
+            if (screenDiv.innerText) { 
+                screenDiv.innerText = eval(screenDiv.innerText);
+            }
             break;
         case '':
             screenDiv.innerText = "";
-            break; 
+            break;
         case 'back':
-            screenDiv.innerText = screenDiv.innerText.slice(0, screenDiv.innerText.length - 1);
+            screenDiv.innerText = screenDiv.innerText.slice(0, -1);
             break;
         default:
             screenDiv.innerText += value;
