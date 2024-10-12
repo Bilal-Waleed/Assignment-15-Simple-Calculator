@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="calculator-display">
+            <div class="screen" ></div>
+        </div>
+        <div class="calculator-buttons">
+            <button style="background-color: red;" onclick="getValue('')">C</button>
+            <button style="background-color: red;" onclick="getValue('back')">DEL</button>
+            <button onclick="getValue('%')">%</button>
+            <button onclick="getValue('/')">/</button>
+
+            <button onclick="getValue('7')">7</button>
+            <button onclick="getValue('8')">8</button>
+            <button onclick="getValue('9')">9</button>
+            <button onclick="getValue('*')">*</button>
+
+            <button onclick="getValue('4')">4</button>
+            <button onclick="getValue('5')">5</button>
+            <button onclick="getValue('6')">6</button>
+            <button onclick="getValue('-')">-</button>
+
+            <button onclick="getValue('1')">1</button>
+            <button onclick="getValue('2')">2</button>
+            <button onclick="getValue('3')">3</button>
+            <button onclick="getValue('+')">+</button>
+
+            <button onclick="getValue('0')" class="zero">0</button>
+            <button onclick="getValue('.')">.</button>
+            <button onclick="getValue('=')">=</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
